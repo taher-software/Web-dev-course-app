@@ -16,7 +16,7 @@ For this repository, I've created html templates and styling files in order to b
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://taher-web-dev.github.io/Web-dev-course-app/)
 
 ### Install
 
