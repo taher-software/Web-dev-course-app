@@ -1,0 +1,361 @@
+body { margin: 0; }
+
+.introd { background-color: #f8f8f8; }
+
+.desktop { display: none; }
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.mobile {
+  height: 100px;
+  background-image: url(../statics/images/red_circle.png);
+  background-repeat: no-repeat;
+  background-position: 20% 56%;
+  background-size: 42px;
+}
+
+.mobile img {
+  margin-left: 24px;
+  margin-top: 12px;
+  width: 65px;
+  height: 60px;
+}
+
+.body-main-home {
+  background-image:
+    url(../statics/images/black-circle.png),
+    url(../statics/images/ellipse.png),
+    url(../statics/images/ellipse.png),
+    url(../statics/images/wordwide.png);
+  background-repeat: no-repeat;
+  background-position:
+    87% 0%,
+    95% 38%,
+    9% 21%,
+    20% 38%;
+}
+
+.hello-text {
+  display: block;
+  font-family: 'Lato', sans-serif;
+  color: #f2533d;
+  font-weight: 550;
+  font-size: 20px;
+  margin: 0 0 0 13%;
+  padding-top: 3%;
+}
+
+h1 {
+  font-family: 'COCOGOOSE', sans-serif;
+  background: -webkit-linear-gradient(#f8433f, #b32d2b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 13%;
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-top: 0;
+  padding-top: 12px;
+}
+
+.presentation {
+  width: 80%;
+  margin-left: 8%;
+  border: 2px solid #eaeaea;
+  color: #7d7d7d;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  padding: 20px 0 20px 20px;
+  font-weight: 590;
+  line-height: 1.6;
+  margin-right: 8%;
+  background-color: #fff;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.contact {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  color: #424242;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  line-height: 1.6;
+}
+
+.logo-section { border-bottom: 1px solid #eaeaea; }
+
+.logo-section h2 {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  color: #383838;
+  margin-top: 5%;
+}
+
+.logo-section-title {
+  width: 60%;
+  margin-left: 20%;
+}
+
+hr {
+  width: 5%;
+  color: #ec5242;
+  background-color: #ec5242;
+  border-color: #ec5242;
+}
+
+.logo-section p {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: 16px;
+  width: 80%;
+  margin-left: 10%;
+  color: #808080;
+  font-weight: 600;
+}
+
+.extra { display: none; }
+
+.logo-jd {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 90%;
+  margin-left: 5%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #eaeaea;
+}
+
+.logo-jd img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.mem-2019 {
+  width: 80%;
+  background-image: url(../statics/images/summit2019.jpg);
+  background-repeat: no-repeat;
+  margin-left: 10%;
+  height: 250px;
+  background-size: 100% 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.mem-2019 p {
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  width: 80%;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.mem-2018 span,
+.mem-2019 span {
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.mem-2018 {
+  width: 80%;
+  background-image: url(../statics/images/summit2018.jpg);
+  background-repeat: no-repeat;
+  margin-left: 10%;
+  height: 250px;
+  background-size: 100% 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15%;
+}
+
+.mem-2018 p {
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  width: 80%;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.partner {
+  background-color: rgb(65, 66, 70);
+  padding-bottom: 10%;
+}
+
+.partner h2 {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  color: #fff;
+  padding-top: 5%;
+  margin-top: 0;
+}
+
+.level-1-partner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.level-2-partner {
+  display: flex;
+  justify-content: center;
+}
+
+.level-2-partner img { margin-right: 5%; }
+
+.author p {
+  font-family: 'Lato', sans-serif;
+  color: rgb(149, 149, 151);
+  width: 50.06%;
+  margin-left: 12%;
+}
+
+.author {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    background-color: #fff;
+    height: 50px;
+  }
+  .mobile { display: none; }
+
+  .desktop {
+    display: flex;
+    height: 100%;
+  }
+
+  .menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    width: 34%;
+    justify-content: space-between;
+    margin-right: 5%;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: rgba(29, 28, 28, 0.8);
+    font-weight: 550;
+    font-size: 12px;
+  }
+
+  .logo {
+    width: 12%;
+    height: 100%;
+    margin-left: 15%;
+    margin-right: 17.5%;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .logo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .desktop p {
+    font-family: 'Lato', sans-serif;
+    color: rgb(248, 85, 90);
+    border: 3px solid rgb(242, 79, 61);
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  .hello-text { display: none; }
+
+  .body-main-home {
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:
+      url(../statics/images/black-circle.png),
+      url(../statics/images/ellipse.png),
+      url(../statics/images/ellipse.png),
+      url(../statics/images/wordwide.png);
+    background-repeat: no-repeat;
+    background-position:
+      92% 36%,
+      0% 39%,
+      98% 53%,
+      3% 52%;
+  }
+
+  h1 {
+    position: relative;
+    margin-top: 6%;
+    left: -6%;
+  }
+
+  .presentation {
+    margin-top: 4%;
+    text-align: center;
+  }
+
+  .contact { margin-bottom: 5%; }
+
+  .logo-section h2 {
+    margin-top: 3%;
+    margin-left: 0;
+    margin-bottom: 1%;
+  }
+
+  hr {
+    width: 2%;
+    margin-bottom: 0;
+  }
+
+  .extra { display: block; }
+
+  .logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-jd {
+    width: 40%;
+    margin-top: 1.5%;
+    margin-bottom: 3%;
+  }
+
+  .mem {
+    display: flex;
+    width: 65%;
+    justify-content: center;
+    margin-top: 3%;
+    height: 350px;
+  }
+
+  .mem-2018 { margin-left: 2%; }
+
+  .partner { display: none; }
+
+  .author {
+    background-color: rgb(46, 46, 46);
+    height: 120px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+
+  .author img { max-height: 20%; }
+
+  .author p { margin-left: 4%; }
+}
