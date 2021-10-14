@@ -73,3 +73,9 @@ Give a ⭐️ if you like this project!
 - Microverse program ⚡
 - My standup team 🏹
 - My family's support 🙌
+
+## 📝 License
+
+This project is [Cindy Shin](https://www.behance.net/adagio07) licensed.
+
+
