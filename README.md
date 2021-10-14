@@ -69,7 +69,7 @@ Give a ⭐️ if you like this project!
 
 
 ## Acknowledgments
-- Original design idea by : Cindy Shin  💘
+- Original design idea by : Cindy Shin  💘 (https://www.behance.net/adagio07)
 - Microverse program ⚡
 - My standup team 🏹
 - My family's support 🙌
