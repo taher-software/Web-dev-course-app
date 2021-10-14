@@ -269,6 +269,8 @@ hr {
   margin-bottom: 7.5%;
 }
 
+footer { display: none; }
+
 @media screen and (min-width: 768px) {
   .desktop { display: flex; }
   .mobile { display: none; }
@@ -418,4 +420,46 @@ hr {
   }
 
   .main-program { margin-top: 2.5%; }
+
+  footer { display: block; }
+
+  .partner {
+    background-color: rgb(65, 66, 70);
+    padding: 0;
+    padding-bottom: 35px;
+  }
+
+  .partner h2 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    padding-top: 25px;
+    margin-bottom: 10px;
+    color: rgb(121, 121, 123);
+  }
+
+  .img-partner {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .author {
+    background-color: rgb(242, 242, 242);
+    height: 120px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .author img { max-height: 20%; }
+
+  .author p {
+    margin-left: 4%;
+    font-family: 'Lato', sans-serif;
+    color: rgb(149, 149, 151);
+    width: 50.06%;
+  }
 }
