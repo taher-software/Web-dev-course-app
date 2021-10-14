@@ -1,10 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet) 
 
 # Capstone project 1 : Web developement course app 
+For this project, I've created simple responsive site for a CMS developement course. Thus, I created home and about page with html and css. I've created menu and speakers section using javascript. I think that this work can be very useful either for someone who want to hold a confernce or a course web site, or web developement practioner.
 
-For this repository, I've created html templates and styling files in order to built my responsive portfolio mobile version and desktop version, in which I can ease to my future recruiter matching my profile with his needs.
-
-![home_page](https://github.com/Taher-web-dev/Portfolio-setup-and-mobile-version-skeleton/blob/work_about_myself/statics/images/screenshot_home_page.png)
+![home_page](https://github.com/Taher-web-dev/Web-dev-course-app/blob/create-home_page-about-page/statics/images/overview.png)
 
 ## Built With 🔨
 
@@ -70,7 +69,11 @@ Give a ⭐️ if you like this project!
 
 
 ## Acknowledgments
-- Original design idea by : Cindy Shin  💘
+- Original design idea by : Cindy Shin  💘 (https://www.behance.net/adagio07)
 - Microverse program ⚡
 - My standup team 🏹
 - My family's support 🙌
+
+## 📝 License
+
+This project is [Cindy Shin](https://www.behance.net/adagio07) licensed.
