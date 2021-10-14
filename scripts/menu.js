@@ -1,5 +1,6 @@
 // constant variables.//
-const menu = document.querySelector('.menu');
+const menuOriginal = document.querySelector('.menu');
+const menu = menuOriginal.cloneNode(true);
 const cancelBtn = document.createElement('img');
 const wrapper = document.createElement('div');
 const hamburger = document.querySelector('.mobile img');
