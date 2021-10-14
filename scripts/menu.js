@@ -45,6 +45,8 @@ menu.style.height = '60%';
 menu.style.padding = '0';
 menu.style.listStyle = 'none';
 menuChilds.forEach((element) => {
+  element.style.height = '15%';
+  element.style.marginBottom = '5%';
   Object.keys(menuStyle).forEach((st) => {
     element.style[st] = menuStyle[st];
   });
@@ -52,8 +54,7 @@ menuChilds.forEach((element) => {
     element.children[0].style[prop] = achronStyle[prop];
   });
 });
-menuChilds[0].style.height = '15%';
-menuChilds[0].style.marginBottom = '5%';
+
 // utilities//
 function displayMenu() {
   menu.style.display = 'flex';
