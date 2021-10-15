@@ -168,6 +168,11 @@ hr {
   font-size: 20px;
 }
 
+.speakers {
+  overflow: auto;
+  height: 100%;
+}
+
 .speakers-title {
   font-family: 'Lato', sans-serif;
   font-size: 18px;
@@ -191,6 +196,16 @@ hr {
   grid-template-rows: auto auto;
   grid-gap: 20%;
   margin-top: 10%;
+}
+
+.full-mobile-fiv {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-gap: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  overflow: auto;
+  height: 100%;
 }
 
 .des-div {

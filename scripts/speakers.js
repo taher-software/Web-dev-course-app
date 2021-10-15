@@ -4,6 +4,7 @@ const title = document.createElement('h1');
 const ligne = document.createElement('hr');
 const mobDiv = document.createElement('div');
 const desDiv = document.createElement('div');
+const fullMobileDiv = document.createElement('div');
 const btn = document.createElement('p');
 const speakers = {
   p1: {
@@ -46,7 +47,7 @@ const speakers = {
 };
 
 // utilities //
-function speakersCarte(nb, target) {
+function speakersCarte(nb, target, d) {
   for (let i = 0; i < nb; i += 1) {
     const person = Object.keys(speakers)[i];
     const mobileCard = document.createElement('div');
@@ -74,11 +75,14 @@ function speakersCarte(nb, target) {
     mobileCard.appendChild(imgVisitor);
     mobileCard.appendChild(textHalf);
     mobileCard.className = 'mobile-card';
-    if (nb === 6) {
+    if (nb === 6 && d === 'd') {
       const startR = Math.floor(i / 2) + 1;
       const startC = (i % 2) + 1;
       mobileCard.style.gridRow = `${startR} / 1 span`;
       mobileCard.style.gridColumn = `${startC} / 1 span`;
+      target.appendChild(mobileCard);
+    } else if (nb === 6 && d === 'm') {
+      mobileCard.style.gridRow = `${i + 1} / 1 span`;
       target.appendChild(mobileCard);
     } else {
       mobileCard.style.gridRow = `${i + 1} / 1 span`;
@@ -92,34 +96,49 @@ title.className = 'speakers-title';
 ligne.className = 'ligne';
 mobDiv.className = 'mob-div';
 desDiv.className = 'des-div';
+fullMobileDiv.className = 'full-mobile-fiv';
 btn.innerHTML = 'MORE <img src="statics/images/fleche.png" alt="More">';
 btn.className = 'btn';
-speakersCarte(2, mobDiv);
-speakersCarte(6, desDiv);
+speakersCarte(2, mobDiv, 'm');
+speakersCarte(6, desDiv, 'd');
+speakersCarte(6, fullMobileDiv, 'm');
 // Add elemnents to target Section.
 targetSection.appendChild(title);
 targetSection.appendChild(ligne);
 targetSection.appendChild(mobDiv);
 targetSection.appendChild(desDiv);
+targetSection.appendChild(fullMobileDiv);
 targetSection.appendChild(btn);
 desDiv.style.display = 'none';
+fullMobileDiv.style.display = 'none';
 if (window.innerWidth > 768) {
   desDiv.style.display = 'grid';
   mobDiv.style.display = 'none';
+  fullMobileDiv.style.display = 'none';
   btn.style.display = 'none';
 } else {
   desDiv.style.display = 'none';
   mobDiv.style.display = 'grid';
+  fullMobileDiv.style.display = 'none';
   btn.style.display = 'block';
 }
 window.addEventListener('resize', () => {
   if (window.innerWidth > 768) {
     desDiv.style.display = 'grid';
     mobDiv.style.display = 'none';
+    fullMobileDiv.style.display = 'none';
     btn.style.display = 'none';
   } else {
     desDiv.style.display = 'none';
     mobDiv.style.display = 'grid';
     btn.style.display = 'block';
+    fullMobileDiv.style.display = 'none';
   }
+});
+
+btn.addEventListener('click', (e) => {
+  mobDiv.style.display = 'none';
+  fullMobileDiv.style.display = 'grid';
+  desDiv.style.display = 'none';
+  e.target.style.display = 'none';
 });

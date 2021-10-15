@@ -61,10 +61,11 @@ function displayMenu() {
   home.appendChild(wrapper);
   wrapper.style.zIndex = '999';
   home.style.position = 'fixed';
+  wrapper.style.display = 'block';
 }
 function closeMenu() {
   wrapper.style.display = 'none';
-  home.style.position = 'relative';
+  home.style.position = 'absolute';
 }
 // track events.//
 hamburger.addEventListener('click', displayMenu);
