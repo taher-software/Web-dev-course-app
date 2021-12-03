@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet) 
 
-# Capstone project 1 : Web developement course app 
+# Capstone project 1 : Web development course app 
 For this project, I've created simple responsive site for a CMS course conference. Thus, I've created home and about page with html and css. I've created menu and speakers section using javascript. I think that this work can be very useful either for someone who want to hold a confernce of web site course, or for a web developement practioner.
 
 ![home_page](https://github.com/Taher-web-dev/Web-dev-course-app/blob/create-home_page-about-page/statics/images/overview.png)
